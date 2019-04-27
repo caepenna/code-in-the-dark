@@ -1,0 +1,83 @@
+<!--
+  Autores:
+  - <Nome 1>
+  - <Nome 2>
+-->
+<html>
+  <head>
+    <style>
+      body, html{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        background-image: url("./bg.jpg");
+        background-size: cover;
+      }
+      header{
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        height: 60px;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav > a {
+        color: white;
+        text-decoration: none;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+      }
+      .logo {
+        background-image: url("./logo.png");
+        color: transparent;
+        height: 40px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+      }
+      main{
+        color: white;
+        text-align: center;
+
+      }
+      .button{
+        background-color: green;
+        text-transform: uppercase;
+        border-radius: 20px;
+        height: 40px;
+        padding: 15px;
+
+      }
+      main > * {
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#">Logo</a>
+      <nav>
+        <a href="#">Premium</a>
+        <a href="#">Ajuda</a>
+        <a href="#">Baixar</a>
+        <span>|</span>
+        <a href="#">Inscrever-se</a>
+        <a href="#">Baixar</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Música para todos.</h1>
+      <h5>Milhões de músicas a sua escolha. E nem precisa de cartão de crédito.</h5>
+      <a class="button">Obtenha o Spotiy FREE</a>
+    </main>
+  </body>
+
+</html>
