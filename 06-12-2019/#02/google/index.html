@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <style media="screen">
+      html {
+        padding: 0;
+      }
+      body {
+        padding: 0;
+        font-family: sans-serif;
+      }
+      nav {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      nav > button {
+        color: white;
+        background-color: blue;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+      }
+      nav > * {
+        margin: 10px;
+      }
+      img {
+        width: 200px;
+
+      }
+      input {
+        border-radius: 999px;
+        appearance: none;
+        width: 300px;
+        background-color: white;
+        border: 1px solid #ccc;
+      }
+      .buttons {
+        text-align: center;
+      }
+      .buttons > button {
+        background-color: #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+        margin-top: 10px;
+      }
+      footer {
+        bakcground-color: #ccc !important;
+        width: 100%;
+        font-size: 12px;
+      }
+      footer > div {
+        border-top: 1px solid #666;
+        width: 100%;
+        padding: 10px;
+        background-color: #ccc !important;
+      }
+      footer a {
+        margin: 5px;
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+      main > * {
+
+      }
+      .bottom > div {
+        display: flex;
+      }
+      .a {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Gmail</a>
+      <a href="#">Imagens</a>
+      <button href="#">Sign In</button>
+    </nav>
+    <main>
+      <img src="logo.png" alt="">
+      <input type="text" name="" value="">
+      <div class="buttons">
+        <button type="button" name="button">Google Search</button>
+        <button type="button" name="button">I'm Feeling Lucky</button>
+      </div>
+      <p>Google offered in: <a class="a" href="#">Portugues (Brasil)</a></p>
+    </main>
+    <footer>
+      <div class="">
+        <p>Brazil</p>
+      </div>
+      <div class="bottom">
+        <div class="">
+          <p>Advertising</p>
+          <p>Business</p>
+          <p>About</p>
+        </div>
+        <div class="">
+          <p>Privacy</p>
+          <p>Terms</p>
+          <p>Settings</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

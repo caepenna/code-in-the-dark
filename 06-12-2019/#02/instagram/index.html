@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        box-sizing: border-box;
+      }
+      body, html {
+        padding: 0;
+        margin: 0;
+        background-color: #eee;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        align-items: center;
+      }
+      .card {
+        background-color: #fff;
+        border: 1px solid #aaa;
+        padding: 20px 40px;
+        text-align: center;
+        width: 300px;
+        margin-bottom: 15px
+      }
+      .card > *:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      .card > input {
+        width: 100%;
+        appearance: none;
+        border: 1px solid #aaa;
+        background-color: #ddd;
+        padding: 10px;
+      }
+      img {
+        width: 175px;
+      }
+      button {
+        background-color: blue;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        opacity: 50%;
+      }
+      .divisor {
+        position: relative;
+        color: #333;
+        text-shadow: 0 0 0 10px #fff;
+      }
+      .divisor::before{
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: #999;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 50%;
+      }
+      .firstinput {
+        margin-bottom: 5px !important;
+      }
+      .card p {
+        color: #666;
+      }
+      a {
+        color: #009 !important;
+        text-decoration: none;
+      }
+      .facebook {
+        font-size: 1.2em;
+      }
+      footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      footer a {
+        text-transform: uppercase;
+        margin: 10px;
+      }
+      .caixapreta {
+        background-color: #000;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+      }
+      .stores {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+      }
+      body > p {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      .card > a {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="logo.png" alt="">
+      <input class="firstinput" type="text" name="" value="" placeholder="Phone number, username or email">
+      <input type="text" name="" value="" placeholder="Password">
+      <button type="button" name="button">Log in</button>
+      <p class="divisor">OR</p>
+      <a class="facebook" href="#">Login with Facebook</a>
+      <a href="#">Forgot passoword?</a>
+    </div>
+    <div class="card">
+      <p>Don't have account? <a href="#">Sign up</a></p>
+    </div>
+    <p>Get the app</p>
+    <div class="stores">
+      <div class="caixapreta"></div>
+      <div class="caixapreta"></div>
+    </div>
+    <footer>
+      <a href="#">About us</a>
+      <a href="#">Support</a>
+      <a href="#">Press</a>
+      <a href="#">API</a>
+      <a href="#">Jobs</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Directory</a>
+      <a href="#">Profiles</a>
+      <a href="#">Hashtags</a>
+      <a href="#">Language</a>
+      <a style="color: transparent"href="#">Language</a>
+      <a style="color: gray"href="#">© 2019 INSTAGRAM</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background-color: #ccc;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        font-family: sans-serif;
+      }
+      .card{
+        background: #fff;
+        border: 1px solid #666;
+        padding: 30px;
+        margin-bottom: 15px;
+        width: 200px;
+        text-align: center;
+      }
+
+      .card>*{
+        margin-bottom: 15px;
+      }
+      input{
+        background-color:#ccc;
+        padding: 10px;
+        font-size: 16px;
+        width: 200px;
+        appearence: none;
+      }
+
+      .logo{
+        width: 150px;
+      }
+
+      .divisor{
+        text-align: center;
+        width: 100%;
+        position: relative;
+      }
+
+      .divisor::before,
+      .divisor::after{
+        content:"";
+        height: 1px;
+        width: 40%;
+        background-color: #666;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
+      .divisor::after{
+        right: 0;
+      }
+
+      button{
+        background-color: blue;
+        color: white;
+        appearence: none;
+        width: 200px;
+        border-radius: 5px;
+      }
+      .facebook{
+        font-size: 22px;
+      }
+      a{
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img class="logo" src="logo.png">
+      <input type="text" placeholder="Phone number, username or e-mail">
+      <input type="text"placeholder="password">
+      <button type="button" name="button">Login</button>
+      <p class="divisor">OR</p>
+      <a href="#" class="facebook">Login with Facebook</a>
+      <a href="#">Forgot password?</a>
+    </div>
+    <div class="card">
+      <p>Don`t have an account? <a >Sign up</a></p>
+
+    </div>
+
+  </body>
+</html>
